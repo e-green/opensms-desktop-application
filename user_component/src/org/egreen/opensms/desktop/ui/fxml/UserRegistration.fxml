@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.web.*?>
@@ -32,7 +33,7 @@
             <Label layoutX="20.0" layoutY="175.0" text="Email :" GridPane.rowIndex="1" />
             <Label layoutX="20.0" layoutY="189.0" text="Telephone :" GridPane.rowIndex="2" />
             <Label layoutX="20.0" layoutY="217.0" text="Address Line 2 :" GridPane.rowIndex="4" />
-            <TextField fx:id="userRegistration_tfEmail" layoutX="182.0" layoutY="171.0" onKeyReleased="#validateEmail" prefHeight="25.0" prefWidth="229.0" style="-fx-border-color: red;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="userRegistration_tfEmail" layoutX="182.0" layoutY="171.0" onKeyReleased="#validateEmail" prefHeight="25.0" prefWidth="229.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="userRegistration_tfTelephone" layoutX="182.0" layoutY="213.0" onKeyReleased="#validateTelephoneNo" prefHeight="25.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
