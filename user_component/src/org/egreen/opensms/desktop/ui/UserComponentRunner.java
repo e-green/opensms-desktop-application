@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package org.egreen.opensms.desktop.ui;
 
 import javafx.application.Application;
@@ -17,13 +16,14 @@ import javafx.stage.Stage;
  * @author ChanakaDe
  */
 public class UserComponentRunner extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("fxml/UserRegistration.fxml"));
-        
+        //root = FXMLLoader.load(getClass().getResource("fxml/UpdateUser.fxml"));
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -34,5 +34,5 @@ public class UserComponentRunner extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

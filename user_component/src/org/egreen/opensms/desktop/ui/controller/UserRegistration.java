@@ -12,7 +12,10 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import org.egreen.opensms.desktop.ui.util.validation.Text_Validations;
@@ -42,6 +45,28 @@ public class UserRegistration implements Initializable {
     @FXML
     private TextField userRegistration_tfInitials;
 //</editor-fold>
+    @FXML
+    private TextField userRegistration_tfAddress2;
+    @FXML
+    private TextField userRegistration_tfAddress1;
+    @FXML
+    private Label label;
+    @FXML
+    private ComboBox<?> userRegistration_cbUserType;
+    @FXML
+    private PasswordField userRegistration_tfPassword;
+    @FXML
+    private CheckBox userRegistration_tf;
+    @FXML
+    private TextField userRegistration_tfUserName;
+    @FXML
+    private TextField userRegistration_tfPostalCode;
+    @FXML
+    private TextField userRegistration_tfCountry;
+    @FXML
+    private TextField userRegistration_tfCity;
+    @FXML
+    private TextField userRegistration_tfProvince;
 
 
     @FXML
@@ -75,10 +100,6 @@ public class UserRegistration implements Initializable {
         Text_Validations.validateAllNames(userRegistration_tfInitials);
     }
 //</editor-fold>
-
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-    }
 
 
     @Override
